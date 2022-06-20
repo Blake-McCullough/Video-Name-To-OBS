@@ -11,12 +11,16 @@ function injectScript(tabId) {
 }
 function sended(id) {
     try {
-        if (id.startsWith("https://music.youtube.com/")) {
+        if (id.startsWith("https://music.youtube.com/watch")) {
             url = 'http://localhost/fetchvid?id=' + id;
             fetch(url);
-            
-
         }
+        else if (id.startsWith("https://youtube.com/watch")) {  
+            url = 'http://localhost/fetchvid?id=' + id;
+            fetch(url);
+        } 
+
+        
     } catch { console.log("An error occured :Awkward:") }
 }
 
