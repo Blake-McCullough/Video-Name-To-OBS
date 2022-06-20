@@ -1,0 +1,20 @@
+{
+    "name": "Youtube Details Fetcher",
+    "description": "detect a URL change in a tab, and will send a request to get the stream info!",
+    "version": "1.0",
+
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "http://localhost:8000/*"
+    ],
+
+    "background": {
+        "service_worker": "background.js"
+    }
+}
