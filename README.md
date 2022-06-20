@@ -3,10 +3,12 @@ A simple chrome plugin + executable to be used to fetch the name of the video yo
 
 
 
-###To add the chrome plugin go to:
--chrome://extensions
--then select, `Load unpacked` 
+### To add the chrome plugin go to:
+- chrome://extensions
+- then select, `Load unpacked` 
 
 
-###To run the local server
--edit the config.json
+### To run the local server
+- Edit the config.json
+- Add your own youtube api token (https://blog.hubspot.com/website/how-to-get-youtube-api-key)
+- Run and boom!
